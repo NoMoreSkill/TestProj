@@ -10,10 +10,10 @@ int main()
 	const int C = 50;
 	string a;
 	char b[C];
-	cout << "Ввод строки:";
+	cout << "Insert string:";
 	cin >> a;
 	int l = a.length();
-	transform(a.begin(), a.end(), a.begin(), tolower);//стандартная (почти) функция преобразования регистра символов, но работает ТОЛЬКО с англ буквами. С кириллицей не работает!!!!
+	transform(a.begin(), a.end(), a.begin(), tolower);//works ONLY with latin symbols. No ru letters!!!!
 	for (int i = 0; i < l; i++)
 		for (int j = 0; j < l; j++)
 		{
